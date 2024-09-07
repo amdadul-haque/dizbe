@@ -1,4 +1,4 @@
-export const contents = [
+export const whishListContents = [
   {
     id: 0,
     bgColor: "#fef2f2",
@@ -180,3 +180,22 @@ export const contents = [
     ]
   }
 ]
+
+import { AiOutlineSearch, AiOutlineHeart, AiOutlineShopping } from 'react-icons/ai';
+export const discoverContents = [
+  {
+    icon: <AiOutlineSearch />,
+    title: "Smart Search Technology",
+    description: "Our search adapts to your preferences, making shopping effortless and efficient."
+  },
+  {
+    icon: <AiOutlineHeart />,
+    title: "Personalized Recommendations",
+    description: "Receive tailored suggestions based on your unique preferences and shopping history."
+  },
+  {
+    icon: <AiOutlineShopping />,
+    title: "Endless Shopping Options",
+    description: "Discover new products and brands that match your style and interests."
+  },
+];

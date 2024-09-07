@@ -1,5 +1,5 @@
 'use client'
-import { contents } from "@/data";
+import {whishListContents as contents } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
@@ -69,7 +69,7 @@ const Wishlist = () => {
 
   return (
     <>
-      <div className={` h-screen transition duration-300`}
+      <div className={`min-h-screen transition duration-300`}
         style={{ backgroundColor: contents[currentIndex]?.bgColor }}>
         <div className="layout py-10">
           <div className="w-full flex justify-between items-center">
@@ -79,18 +79,18 @@ const Wishlist = () => {
           {/* <p>index:{currentIndex}</p> */}
           {/* <p>{contents[currentIndex]?.bgColor}</p> */}
           <div className="w-full mt-12 flex flex-col lg:flex-row gap-10 items-stretch">
-            <div className="w-full lg:w-1/3 flex flex-col justify-center gap-8">
+            <div className="w-full lg:w-1/3 flex flex-col justify-center gap-2 xl:gap-8">
               <div>
                 <Image
                   src={"/images/logo.png"}
                   alt={currentContent?.products[0]?.name}
                   width={500}
                   height={500}
-                  className="h-16 w-auto"
+                  className="h-12 xl:h-16 w-auto"
                 />
               </div>
-              <div className="h-24">
-                <span className="text-2xl xl:text-[28px] font-semibold line-clamp-2 leading-relaxed">
+              <div className="h-20 xl:h-24">
+                <span className="text-2xl xl:text-[28px] font-semibold leading-relaxed">
                   <Typewriter
                     words={animatedTexts}
                     loop={true}
@@ -115,7 +115,7 @@ const Wishlist = () => {
               exit={{ opacity: 0, scale: 0.5 }}
               transition={{ duration: 0.5 }}
             >
-              <div className="grid grid-cols-3 gap-8">
+              <div className="grid grid-cols-2 xl:grid-cols-3 gap-3 md:gap-5 xl:gap-8">
                 {currentContent?.products.map((product, index) => (
                   <div key={index} className="w-full flex flex-col gap-4">
                     <motion.div

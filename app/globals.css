@@ -3,6 +3,14 @@
 @tailwind utilities;
 
 
-.layout{
+.layout {
   @apply w-[90%] max-w-[1200px] mx-auto;
+}
+
+.hero {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/images/hero/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+
 }
