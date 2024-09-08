@@ -10,17 +10,17 @@ const Footer = () => {
         <div className="pb-9 sm:pb-12 md:pb-16 lg:pb-20 xl:pb-24">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-y-10 gap-x-8">
             <div>
-              <Link href="/book">
-              <Image
+              <Link href="/">
+                <Image
                   src="/images/logo.png"
                   width={223}
                   height={66}
                   alt="Apex Autos"
-                  className="w-auto xl:w-[223px]"
+                  className="w-[180px] md:w-[200px] xl:w-[223px]"
                 />
               </Link>
               <p className="text-white text-sm md:text-base mt-5 md:mt-6 xl:mt-8 max-w-[500px] lg:max-w-[630px]">
-              Dizzbe revolutionizes your shopping experience with AI-driven, contextually aware search. Whether you’re at home or on the go, our platform adapts to your needs—suggesting products based on your location, weather, and events. Discover the future of shopping with unparalleled precision, wherever you are.
+                Dizzbe revolutionizes your shopping experience with AI-driven, contextually aware search. Whether you’re at home or on the go, our platform adapts to your needs—suggesting products based on your location, weather, and events. Discover the future of shopping with unparalleled precision, wherever you are.
               </p>
             </div>
             <div>
