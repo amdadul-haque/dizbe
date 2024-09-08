@@ -5,7 +5,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-black-100 pt-16 md:pt-20 lg:pt-24 xl:pt-[120px] text-white">
+    <footer className="bg-black-100 pt-16 md:pt-20 xl:pt-24 text-white">
       <div className="layout">
         <div className="pb-9 sm:pb-12 md:pb-16 lg:pb-20 xl:pb-24">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-y-10 gap-x-8">

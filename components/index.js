@@ -1,3 +1,5 @@
 export * from './wishlist'
 export * from './hero'
 export * from './discover'
+export * from './features'
+export * from './footer'

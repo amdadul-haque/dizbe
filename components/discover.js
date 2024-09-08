@@ -3,7 +3,7 @@ import React from 'react'
 
 const Discover = () => {
   return (
-    <div className='w-full bg-gray-100 py-12 md:py-16 xl:py-24'>
+    <div className='w-full bg-gray-100 py-16 md:py-20 xl:py-28'>
       <div className='layout'>
         <div className=''>
           <h2 className='text-center text-2xl md:text-3xl xl:text-4xl font-semibold w-[80%] max-w-[400px] mx-auto'>Discover the Ultimate Search Experience</h2>
