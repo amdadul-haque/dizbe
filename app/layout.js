@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 const roboto = Roboto({ subsets: ["latin"], weight: ["400", "500", "700"] });
 
 export const metadata = {
-  title: "dizzbee",
+  title: "dizzbe",
   description: "Experience the ultimate shopping experience",
 };
 

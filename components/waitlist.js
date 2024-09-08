@@ -5,7 +5,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Typewriter } from 'react-simple-typewriter'
 import { motion } from "framer-motion";
-import { Button } from "./core";
+import { Button, Modal } from "./core";
 
 const animatedTexts = [
   "I need a dress for summer in Costa Rica",
@@ -45,7 +45,6 @@ const WaitList = () => {
 
   const getRandomNumber = (min, max) => Math.random() * (max - min) + min;
 
-  // Function to generate unique animation values
   const getUniqueAnimation = () => {
     const directions = ['x', 'y'];
     const randomDirection = directions[Math.floor(Math.random() * directions.length)];
@@ -68,8 +67,12 @@ const WaitList = () => {
   };
 
 
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <>
+      <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+      
       <div className={`min-h-screen transition duration-300`}
         style={{ backgroundColor: contents[currentIndex]?.bgColor }}>
         <div className="layout py-10">
@@ -106,11 +109,13 @@ const WaitList = () => {
               <div className="">
                 <Button
                   buttonText="Join Waitlist"
-                  buttonLink="/waitlist"
+                  // buttonLink="/waitlist"
+                  onClick={() => setIsModalOpen(true)}
                 />
               </div>
             </div>
-            <motion.div className="w-full lg:w-2/3 "
+            <motion.div className="w-full lg:w-2/3"
+              style={{ zIndex: 10 }}
               key={currentIndex}
               initial={{ opacity: 0, scale: 0.5 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -121,17 +126,7 @@ const WaitList = () => {
                 {currentContent?.products.map((product, index) => (
                   <div key={index} className="w-full flex flex-col gap-4">
                     <motion.div
-                      className="w-full h-60 relative rounded-2xl"
-                      // animate={{
-                      //   x: [0, 10, 0, -10, 0],
-                      //   rotate: [0, 2, 0, -2, 0],
-                      // }}
-                      // transition={{
-                      //   duration: 10,
-                      //   ease: "easeInOut",
-                      //   repeat: Infinity,
-                      //   repeatType: "reverse",
-                      // }}
+                      className="w-full h-60 relative rounded-2xl !z-10"
                       {...getUniqueAnimation(index)}
                     >
                       <Image
