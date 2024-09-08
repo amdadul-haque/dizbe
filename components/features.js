@@ -35,7 +35,7 @@ const Features = () => {
     <div className='py-16 md:py-24 xl:py-28'>
       <div className="layout flex flex-col items-center gap-12 md:gap-16 xl:gap-20">
         <h2 className='text-center text-2xl md:text-3xl xl:text-4xl font-semibold w-[80%] max-w-[400px] mx-auto'>Initialization Process</h2>
-        <div className='flex flex-col md:flex-row items-center justify-center gap-8'>
+        <div className='flex flex-col md:flex-row items-center justify-center gap-10'>
           <div className="w-full md:w-1/2 flex flex-col gap-y-6">
             {factors.map((factor, index) => (
               <div key={index} className="flex items-start gap-4">

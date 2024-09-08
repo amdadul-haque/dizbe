@@ -1,5 +1,6 @@
-export * from './wishlist'
+export * from './waitlist'
 export * from './hero'
 export * from './discover'
 export * from './features'
 export * from './footer'
+export * from './cta'

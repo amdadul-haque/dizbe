@@ -1,4 +1,4 @@
-import { Discover, Features, Footer, Hero, Wishlist } from "@/components";
+import { CTA, Discover, Features, Hero, WaitList } from "@/components";
 import { ScrollToTop } from "@/components/core";
 
 export default function Home() {
@@ -6,13 +6,11 @@ export default function Home() {
     <div className="text-black-100">
       <ScrollToTop />
 
-      <Wishlist />
+      <WaitList />
       <Hero />
       <Discover />
       <Features />
-      <Footer />
-
-      
+      <CTA />
     </div>
   );
 }

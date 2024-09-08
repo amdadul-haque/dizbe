@@ -1,10 +1,11 @@
 'use client'
-import {whishListContents as contents } from "@/data";
+import { whishListContents as contents } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { Typewriter } from 'react-simple-typewriter'
 import { motion } from "framer-motion";
+import { Button } from "./core";
 
 const animatedTexts = [
   "I need a dress for summer in Costa Rica",
@@ -15,7 +16,7 @@ const animatedTexts = [
 ]
 
 
-const Wishlist = () => {
+const WaitList = () => {
 
   const typeSpeed = 70
   const deleteSpeed = 30
@@ -103,9 +104,10 @@ const Wishlist = () => {
                 </span>
               </div>
               <div className="">
-                <button className="bg-primary rounded-lg text-white px-4 lg:px-6 py-2 lg:py-[10px] font-medium hover:bg-primary-dark transition">
-                  Join Waitlist
-                </button>
+                <Button
+                  buttonText="Join Waitlist"
+                  buttonLink="/waitlist"
+                />
               </div>
             </div>
             <motion.div className="w-full lg:w-2/3 "
@@ -155,4 +157,4 @@ const Wishlist = () => {
   );
 };
 
-export { Wishlist };
+export { WaitList };

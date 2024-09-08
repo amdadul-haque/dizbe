@@ -2,8 +2,8 @@ import React from 'react'
 
 const WaitListPage = () => {
   return (
-    <main>
-      <div>
+    <main className='h-screen'>
+      <div className='layout'>
 
       </div>
     </main>
