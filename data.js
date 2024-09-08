@@ -1,3 +1,11 @@
+import { FaTelegramPlane } from "react-icons/fa";
+import {
+  FaLinkedinIn,
+  FaInstagram,
+  FaXTwitter,
+  FaTiktok,
+} from "react-icons/fa6";
+
 export const whishListContents = [
   {
     id: 0,
@@ -11,7 +19,7 @@ export const whishListContents = [
       {
         name: "Beach Kaftan",
         price: 65,
-        image: "https://images.unsplash.com/photo-1528995743980-1f7892ce2c25?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVhY2glMjBrYWZ0YW58ZW58MHx8MHx8fDA%3D",
+        image: "https://images.unsplash.com/photo-1571424161765-c4080147f74f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVhY2glMjBrYWZ0YW58ZW58MHx8MHx8fDA%3D",
       },
       {
         name: "Tropical Jumpsuit",
@@ -199,3 +207,33 @@ export const discoverContents = [
     description: "Discover new products and brands that match your style and interests."
   },
 ];
+
+
+export const socials = [
+  {
+    icon: <FaInstagram />,
+    link: "",
+  },
+  {
+    icon: <FaXTwitter />,
+    link: "",
+  },
+  {
+    icon: <FaTiktok />,
+    link: "",
+  },
+  // {
+  //   icon: <FaLinkedinIn />,
+  //   link: "/",
+  // },
+  // {
+  //   icon: <FaTelegramPlane />,
+  //   link: "/",
+  // },
+];
+
+export const appLinks = {
+  ios: "",
+  android:
+    "",
+};

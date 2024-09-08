@@ -104,7 +104,7 @@ const Wishlist = () => {
               </div>
               <div className="">
                 <button className="bg-primary rounded-lg text-white px-4 lg:px-6 py-2 lg:py-[10px] font-medium hover:bg-primary-dark transition">
-                  Join Wishlist
+                  Join Waitlist
                 </button>
               </div>
             </div>

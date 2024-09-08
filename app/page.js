@@ -1,4 +1,6 @@
 import { Discover, Hero, Wishlist } from "@/components";
+import { ScrollToTop } from "@/components/core";
+import { Footer } from "@/components/footer";
 
 export default function Home() {
   return (
@@ -6,6 +8,9 @@ export default function Home() {
       <Wishlist />
       <Hero />
       <Discover />
+      <Footer />
+
+      <ScrollToTop />
     </div>
   );
 }
