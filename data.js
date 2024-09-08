@@ -17,9 +17,9 @@ export const whishListContents = [
         image: "https://images.unsplash.com/photo-1515372039744-b8f02a3ae446?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3VtbWVyJTIwZHJlc3N8ZW58MHx8MHx8fDA%3D",
       },
       {
-        name: "Beach Kaftan",
+        name: "Beachwear",
         price: 65,
-        image: "https://images.unsplash.com/photo-1571424161765-c4080147f74f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmVhY2glMjBrYWZ0YW58ZW58MHx8MHx8fDA%3D",
+        image: "https://images.unsplash.com/photo-1711227899057-23d508a84c16?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
         name: "Tropical Jumpsuit",
@@ -111,7 +111,7 @@ export const whishListContents = [
       {
         name: "Mesh Top",
         price: 60,
-        image: "https://images.unsplash.com/photo-1602073036546-83b7054eea5d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bWVzaCUyMHRvcHxlbnwwfHwwfHx8MA%3D%3D",
+        image: "https://images.unsplash.com/photo-1485231183945-fffde7cc051e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
     ]
   },
@@ -168,7 +168,7 @@ export const whishListContents = [
       {
         name: "Sleeveless Blouse",
         price: 55,
-        image: "https://images.unsplash.com/photo-1564257631407-4deb1dcd5f39?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2xlZXZlbGVzcyUyMGJsb3VzZXxlbnwwfHwwfHx8MA%3D",
+        image: "https://images.unsplash.com/photo-1480406266260-49c193257b6d?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
         name: "Henley Shirt",
@@ -178,7 +178,7 @@ export const whishListContents = [
       {
         name: "Turtleneck",
         price: 60,
-        image: "https://images.unsplash.com/photo-1608735797791-c2207840327f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dHVydGxlbmVja3xlbnwwfHwwfHx8MA%3D",
+        image: "https://images.unsplash.com/photo-1608739871923-7da6d372f3c2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       },
       {
         name: "Polo Shirt",
