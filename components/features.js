@@ -45,8 +45,8 @@ const Features = () => {
         </motion.h2>
         <div className='flex flex-col md:flex-row items-center justify-center gap-10'>
           <motion.div className="w-full md:w-1/2 flex flex-col gap-y-6"
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: .4 }}
           >
             {factors.map((factor, index) => (
@@ -62,8 +62,8 @@ const Features = () => {
             ))}
           </motion.div>
           <motion.div className="w-full md:w-1/2"
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
+            initial={{ y: 50, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: .4 }}
           >
             <Image

@@ -75,8 +75,8 @@ const WaitList = () => {
 
       <div className={`min-h-screen transition duration-300`}
         style={{ backgroundColor: contents[currentIndex]?.bgColor }}>
-        <div className="layout py-10">
-          <div className="w-full flex justify-between items-center">
+        <div className="layout py-5 md:py-10">
+          <div className="w-full hidden md:flex justify-between items-center mb-12">
             <Link href={"/"}>
               <Image
                 src={"/images/logo.png"}
@@ -89,7 +89,7 @@ const WaitList = () => {
           </div>
           {/* <p>index:{currentIndex}</p> */}
           {/* <p>{contents[currentIndex]?.bgColor}</p> */}
-          <div className="w-full mt-12 flex flex-col lg:flex-row gap-10 items-stretch">
+          <div className="w-full flex flex-col lg:flex-row gap-10 items-stretch">
             <div className="w-full lg:w-1/3 flex flex-col justify-center gap-2 xl:gap-8">
               <div>
                 <Image

@@ -13,8 +13,8 @@ const Hero = () => {
         <div className='layout text-white flex justify-center items-center'>
           <div className='w-full grid grid-cols-1 md:grid-cols-2 gap-10'>
             <motion.div className='w-full flex flex-col justify-center'
-              initial={{ x: -100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: .4 }}
             >
               <h1 className='text-3xl md:text-4xl lg:text-5xl xl:text-[52px] font-bold leading-none'>Precision in Every Cart</h1>
@@ -28,8 +28,8 @@ const Hero = () => {
               </div>
             </motion.div>
             <motion.div className='w-full flex justify-center md:justify-end '
-              initial={{ x: 100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: .4 }}
             >
               <Image

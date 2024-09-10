@@ -12,8 +12,8 @@ const Footer = () => {
         <div className="pb-9 sm:pb-12 md:pb-16 lg:pb-20 xl:pb-24">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-y-10 gap-x-8">
             <motion.div
-              initial={{ x: -100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: .4 }}
             >
               <Link href="/">
@@ -38,8 +38,8 @@ const Footer = () => {
               </div>
             </motion.div>
             <motion.div
-              initial={{ x: 100, opacity: 0 }}
-              whileInView={{ x: 0, opacity: 1 }}
+              initial={{ y: 50, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
               transition={{ duration: .4 }}
             >
               <div className="flex justify-start md:justify-end items-center gap-3 md:gap-4">
