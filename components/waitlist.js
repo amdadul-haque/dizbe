@@ -72,13 +72,20 @@ const WaitList = () => {
   return (
     <>
       <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
-      
+
       <div className={`min-h-screen transition duration-300`}
         style={{ backgroundColor: contents[currentIndex]?.bgColor }}>
         <div className="layout py-10">
           <div className="w-full flex justify-between items-center">
-            <span>A new era of shopping</span>
-            <Link href={""}>Login</Link>
+            <Link href={"/"}>
+              <Image
+                src={"/images/logo.png"}
+                alt="logo"
+                width={200}
+                height={200}
+                className="h-12 xl:h-16 w-auto"
+              />
+            </Link>
           </div>
           {/* <p>index:{currentIndex}</p> */}
           {/* <p>{contents[currentIndex]?.bgColor}</p> */}

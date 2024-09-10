@@ -212,7 +212,7 @@ export const discoverContents = [
 export const socials = [
   {
     icon: <FaInstagram />,
-    link: "",
+    link: "https://www.instagram.com/dizzbe.ai",
   },
   {
     icon: <FaXTwitter />,
@@ -233,7 +233,7 @@ export const socials = [
 ];
 
 export const appLinks = {
-  ios: "",
+  ios: "#",
   android:
-    "",
+    "#",
 };

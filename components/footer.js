@@ -1,7 +1,9 @@
+'use client'
 import { appLinks, socials } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { motion } from 'framer-motion'
 
 const Footer = () => {
   return (
@@ -9,7 +11,11 @@ const Footer = () => {
       <div className="layout">
         <div className="pb-9 sm:pb-12 md:pb-16 lg:pb-20 xl:pb-24">
           <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-y-10 gap-x-8">
-            <div>
+            <motion.div
+              initial={{ x: -100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: .4 }}
+            >
               <Link href="/">
                 <Image
                   src="/images/logo.png"
@@ -19,11 +25,23 @@ const Footer = () => {
                   className="w-[180px] md:w-[200px] xl:w-[223px]"
                 />
               </Link>
-              <p className="text-white text-sm md:text-base mt-5 md:mt-6 xl:mt-8 max-w-[500px] lg:max-w-[630px]">
+              <p className="text-white text-sm md:text-base my-5 md:my-6 xl:my-8 max-w-[500px] lg:max-w-[630px]">
                 Dizzbe revolutionizes your shopping experience with AI-driven, contextually aware search. Whether you’re at home or on the go, our platform adapts to your needs—suggesting products based on your location, weather, and events. Discover the future of shopping with unparalleled precision, wherever you are.
               </p>
-            </div>
-            <div>
+              <div className="flex gap-3">
+                <Link href="/terms-of-service" className="text-sm md:text-base text-secondary hover:underline underline-offset-4">
+                  Terms of Service
+                </Link>
+                <Link href="/privacy-policy" className="text-sm md:text-base text-secondary hover:underline underline-offset-4">
+                  Privacy Policy
+                </Link>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ x: 100, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              transition={{ duration: .4 }}
+            >
               <div className="flex justify-start md:justify-end items-center gap-3 md:gap-4">
                 {socials.map((item, index) => (
                   <Link key={index} href={item.link} passHref>
@@ -34,7 +52,7 @@ const Footer = () => {
                 ))}
               </div>
               <div className="flex items-center gap-4 mt-5 md:mt-6 xl:mt-8">
-                <Link href={appLinks.ios} target="_blank">
+                <Link href={appLinks.ios}>
                   <Image
                     src="/images/common/appstore-white.svg"
                     alt="location"
@@ -43,7 +61,7 @@ const Footer = () => {
                     className="w-auto h-[40px] md:h-auto xl:h-[70px] hover:scale-[1.02] transition"
                   />
                 </Link>
-                <Link href={appLinks.android} target="_blank">
+                <Link href={appLinks?.android}>
                   <Image
                     src="/images/common/playstore-white.svg"
                     alt="playstore"
@@ -53,7 +71,7 @@ const Footer = () => {
                   />
                 </Link>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="h-[1px] w-full bg-white/10"></div>

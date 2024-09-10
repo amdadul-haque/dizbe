@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { FaCheckSquare, FaRegSquare, FaTimes } from 'react-icons/fa';
 import { FiCheckCircle } from 'react-icons/fi';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const Modal = ({ isOpen, onClose }) => {
   // Lock body scroll when modal opens
@@ -64,9 +65,14 @@ const Modal = ({ isOpen, onClose }) => {
 
   if (!isOpen) return null;
   return (
-    <div className="fixed inset-0 bg-gradient-to-r from-white to-white/90 z-[100]">
+    <motion.div className="fixed inset-0 bg-gradient-to-r from-white to-white/90 z-[100]"
+      initial={{ opacity: 0, scale: 0.1 }}
+      animate={{ opacity: 1, scale: 1 }}
+      exit={{ opacity: 0, scale: 0.8 }}
+      transition={{ duration: 0.3 }}
+    >
       <div className="layout relative h-full flex items-center">
-        <button onClick={onClose} className='absolute right-3 top-8 text-black-300 bg-gray-300 hover:bg-white transition p-3 rounded-full'>
+        <button onClick={onClose} className='absolute right-3 top-8 text-black-300 bg-gray-300 hover:bg-gray-200 transition p-3 rounded-full'>
           <FaTimes className='text-2xl' />
         </button>
         {/* <span className='absolute left-3 top-8 text-lg font-medium'>1 of 4</span> */}
@@ -81,8 +87,8 @@ const Modal = ({ isOpen, onClose }) => {
               height={50}
               className=""
             />
-            <p className='text-sm md:text-base text-center w-[90%] mx-auto'>We’ll send a code to your email to verify and register your account.</p>
-            <div>
+            {/* <p className='text-sm md:text-base text-center w-[90%] mx-auto'>We’ll send a code to your email to verify and register your account.</p> */}
+            <div className='mt-7 md:mt-10'>
               <p className='text-sm md:text-base'>Email</p>
               <input
                 type="email"
@@ -100,7 +106,15 @@ const Modal = ({ isOpen, onClose }) => {
                   {isChecked ? <FaCheckSquare /> : <FaRegSquare />}
                 </span>
                 }
-                <span className='text-sm'>By continuing, you agree to Daydream’s Privacy policy and acknowledge you’ve read our Terms of service</span>
+                <span className='text-sm'>By continuing, you agree to Dizzbe’s
+                  <Link href='/privacy-policy' target='_blank' className='mx-1 underline underline-offset-4 font-bold hover:no-underline'>
+                    Privacy policy
+                  </Link>
+                  and acknowledge you’ve read our
+                  <Link href='/terms-of-service' target='_blank' className='mx-1 underline underline-offset-4 font-bold hover:no-underline'>
+                    Terms of Service
+                  </Link>
+                </span>
               </div>
             </div>
             <button
@@ -152,7 +166,7 @@ const Modal = ({ isOpen, onClose }) => {
           </motion.div>
         }
       </div>
-    </div >
+    </motion.div >
   );
 };
 
