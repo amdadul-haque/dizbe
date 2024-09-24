@@ -76,7 +76,7 @@ const WaitList = () => {
       <div className={`min-h-screen transition duration-300`}
         style={{ backgroundColor: contents[currentIndex]?.bgColor }}>
         <div className="layout py-5 md:py-10">
-          <div className="w-full flex justify-between items-center mb-12">
+          <div className="w-full flex justify-between items-center mb-8 lg:mb-12">
             <Link href={"/"}>
               <Image
                 src={"/images/logo.png"}
