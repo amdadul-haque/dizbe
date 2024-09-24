@@ -92,7 +92,7 @@ const WaitList = () => {
           <div className="w-full flex flex-col lg:flex-row gap-10 items-stretch">
             <div className="w-full lg:w-1/3 flex flex-col justify-center gap-2 xl:gap-8">
               <div>
-                <h1 className='text-primary text-3xl lg:text-[32px] xl:text-[36px] font-bold !leading-[1.2]'>
+                <h1 className='text-secondary text-3xl lg:text-[32px] xl:text-[36px] font-bold !leading-[1.2]'>
                 Precision in Every Cart
               </h1>
               </div>
